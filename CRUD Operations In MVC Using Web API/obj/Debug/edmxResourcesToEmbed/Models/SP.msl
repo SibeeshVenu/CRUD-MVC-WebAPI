@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SibeeshPassionModelStoreContainer" CdmEntityContainer="SibeeshPassionEntities">
+    <EntitySetMapping Name="tbl_Subscribers">
+      <EntityTypeMapping TypeName="SibeeshPassionModel.tbl_Subscribers">
+        <MappingFragment StoreEntitySet="tbl_Subscribers">
+          <ScalarProperty Name="SubscriberID" ColumnName="SubscriberID" />
+          <ScalarProperty Name="MailID" ColumnName="MailID" />
+          <ScalarProperty Name="SubscribedDate" ColumnName="SubscribedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SibeeshPassionModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_Subscribers">
+    <Key>
+      <PropertyRef Name="SubscriberID" />
+    </Key>
+    <Property Name="SubscriberID" Type="int" Nullable="false" />
+    <Property Name="MailID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SubscribedDate" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SibeeshPassionModelStoreContainer">
+    <EntitySet Name="tbl_Subscribers" EntityType="Self.tbl_Subscribers" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
